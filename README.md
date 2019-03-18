@@ -1,8 +1,8 @@
 # Best::Books::Of::2018
 
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/best/books/of/2018`. To experiment with that code, run `bin/console` for an interactive prompt.
+This Ruby Gem provides a CLI that allows the user to choose a title from the list of the best Books of 2018 according to the prestigious Washington Post and get a summary and details about each and one of them. Hopefully getting curious and motivated about these amazing reads and get to read the ones that get their attention.
 
-TODO: Delete this and the text above, and describe your gem
+
 
 ## Installation
 

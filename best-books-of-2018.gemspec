@@ -1,17 +1,17 @@
 
 lib = File.expand_path("../lib", __FILE__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
-require "best/books/of/2018/version"
+require "best_books_of_2018/version"
 
 Gem::Specification.new do |spec|
   spec.name          = "best-books-of-2018"
-  spec.version       = Best::Books::Of::2018::VERSION
+  spec.version       = BestBooksOf2018::VERSION
   spec.authors       = ["'David Acosta'"]
   spec.email         = ["'davidacosta25081@yahoo.com'"]
 
-  spec.summary       = %q{TODO: Write a short summary, because RubyGems requires one.}
-  spec.description   = %q{TODO: Write a longer description or delete this line.}
-  spec.homepage      = "TODO: Put your gem's website or public repo URL here."
+  spec.summary       = "Best Books of 2018"
+  spec.description   = "Browse a list of the best Books of the year 2018 according to the prestigious Washington Post and get a summary and details about each of them"
+  spec.homepage      = "learn.co"
   spec.license       = "MIT"
 
   # Prevent pushing this gem to RubyGems.org. To allow pushes either set the 'allowed_push_host'
@@ -20,7 +20,7 @@ Gem::Specification.new do |spec|
     spec.metadata["allowed_push_host"] = "TODO: Set to 'http://mygemserver.com'"
 
     spec.metadata["homepage_uri"] = spec.homepage
-    spec.metadata["source_code_uri"] = "TODO: Put your gem's public repo URL here."
+    spec.metadata["source_code_uri"] = "TODO: Set to 'http://mygemserver.com"
     spec.metadata["changelog_uri"] = "TODO: Put your gem's CHANGELOG.md URL here."
   else
     raise "RubyGems 2.0 or newer is required to protect against " \
@@ -38,4 +38,8 @@ Gem::Specification.new do |spec|
 
   spec.add_development_dependency "bundler", "~> 2.0"
   spec.add_development_dependency "rake", "~> 10.0"
+  spec.add_development_dependency "pry", ">= 0"
+  spec.add_development_dependency "nokogiri", ">= 0"
+  spec.add_development_dependency "colorize", ">= 0"
+
 end
