@@ -6,15 +6,17 @@ class BestBooksOf2018::CLI
   end
 
   def list_books
-    puts "\n"
-    puts "WELCOME TO THE WASHINGTON POST BEST BOOKS OF 2018!".colorize(:light_blue)
-    puts "\n"
+    puts ""
+    puts "-------------------------------------------------- "
+    puts "WELCOME TO THE WASHINGTON POST BEST BOOKS OF 2018!".colorize(:blue)
+    puts "-------------------------------------------------- "
+    puts ""
     BestBooksOf2018::Book.all.each_with_index do |bk,i|
     puts "#{i+1}.  #{bk.name}"
   end
 
     puts "\n"
-    puts "Please make your book selection : ".colorize(:light_blue)
+    puts "Please make your book selection : ".colorize(:blue)
     input = gets.strip.downcase
 
     if input.to_i.between?(1,10)
@@ -30,21 +32,23 @@ class BestBooksOf2018::CLI
       list_books
     elsif input == "n"
       puts ""
-      bye_array = ["“I find television very educating. Every time somebody turns on the set, I go into the other room and read a book. ― Groucho Marx”", "“If you don't have time to read, you don't have the time (or the tools) to write. Simple as that.”
-      ― Stephen King","“Think before you speak. Read before you think.” ― Fran Lebowitz,"]
-      puts "#{bye_array.sample} \n"
-      puts "Have a great day !"
+      bye_array = ["“I find television very educating. Every time somebody turns on the set, I go into the other room and read a book.” ― Groucho Marx",
+      "“If you don't have time to read, you don't have the time (or the tools) to write. Simple as that.” ― Stephen King","“Think before you speak. Read before you think.” ― Fran Lebowitz",
+      "“Reading is to the mind what exercise is to the body.” ― Joseph Addison"]
+      puts "#{bye_array.sample}"
+      puts ""
+      puts "Have a great day !".colorize(:yellow)
       exit
     else
       puts ""
-      puts "Invalid answer".colorize(:red)
+      puts "Invalid answer -  Back to Main Menu".colorize(:red)
       list_books
     end
   end
 
 
   def display_book(selected_book)
-    puts "---------------------------------------"
+    puts "-----------------------------------------"
     puts "#{selected_book.name.upcase}".colorize(:blue)
     puts "By #{selected_book.author}".colorize(:blue)
     puts " "
@@ -52,7 +56,7 @@ class BestBooksOf2018::CLI
     puts ""
     puts " #{selected_book.description}"
     puts "Price : #{selected_book.price[8..11]}"
-    puts "----------------------------------------"
+    puts "------------------------------------------"
   end
 
 end
