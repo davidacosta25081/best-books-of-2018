@@ -1,6 +1,6 @@
 class BestBooksOf2018::Book
 
-  attr_accessor :name :author :description :price
+  attr_accessor :name, :author, :description, :price
 
   @@all = []
 
@@ -25,3 +25,6 @@ class BestBooksOf2018::Book
   def self.find(location)
     self.all[location-1]
   end
+
+
+end
