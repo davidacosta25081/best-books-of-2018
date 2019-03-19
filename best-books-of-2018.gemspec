@@ -4,7 +4,7 @@ $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 require "best_books_of_2018/version"
 
 Gem::Specification.new do |spec|
-  spec.name          = "best_books_of_2018"
+  spec.name          = "best-books-of-2018"
   spec.version       = BestBooksOf2018::VERSION
   spec.authors       = ["'David Acosta'"]
   spec.email         = ["'davidacosta25081@yahoo.com'"]

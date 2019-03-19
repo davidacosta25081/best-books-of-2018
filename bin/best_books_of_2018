@@ -1,5 +1,0 @@
-#!/usr/bin/env ruby
-
-require_relative '../lib/best_books_of_2018'
-
-BestBooksOf2018::CLI.new.call
