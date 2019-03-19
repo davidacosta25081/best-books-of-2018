@@ -1,4 +1,4 @@
-class BestBooksof2018::CLI
+class BestBooksOf2018::CLI
 
 def call
   BestBooksOf2018::Scraper.new.books_maker
@@ -7,7 +7,9 @@ def call
 end
 
 def list_books
-  puts "Welcome to The Washington Post Best Books of 2018 list"
+  puts "\n"
+  puts "WELCOME TO THE WASHINGTON POST BEST BOOKS OF 2018!".colorize(:light_blue)
+
     BestBooksOf2018::Book.all.each_with_index do |bk,i|
       puts "#{i+1}.  #{bk.name}"
     end

@@ -10,9 +10,9 @@ class BestBooksOf2018::Scraper
   end
 
   def books_maker
-    scrape_books.each { |b|
-      BestBooksOf2018::Book.new_book(b) }
-binding.pry
+    scrape_books.each do |b|
+      BestBooksOf2018::Book.new_book(b)
+    end
   end
 
 end

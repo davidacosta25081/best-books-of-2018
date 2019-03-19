@@ -3,7 +3,7 @@ require "best_books_of_2018"
 
 require "open-uri"
 require "nokogiri"
-
+require "colorize"
 
 
 require_relative "../lib/best_books_of_2018/version"

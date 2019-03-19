@@ -5,7 +5,7 @@ class BestBooksOf2018::Book
   @@all = []
 
   def self.new_book(b)
-    self.new (
+    self.new(
     b.css("p.booktitle").text,
     b.css("span.author").text,
     b.css("p.blurb").text,
@@ -22,8 +22,8 @@ class BestBooksOf2018::Book
   end
 
 
-  def self.find(location)
-    self.all[location-1]
+  def self.all
+    @@all
   end
 
 
