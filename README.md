@@ -1,4 +1,4 @@
-# Best::Books::Of::2018
+# BestBooksOf2018
 
 This Ruby Gem provides a CLI that allows the user to choose a title from the list of the best Books of 2018 according to the prestigious Washington Post and get a summary and details about each and one of them. Hopefully getting curious and motivated about these amazing reads and get to read the ones that get their attention.
 
